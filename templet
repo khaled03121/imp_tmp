@@ -1,0 +1,44 @@
+#include <bits/stdc++.h>
+typedef long long int ll;
+#define pi 2 * acos(0.0)
+#define vll vector<ll>
+#define vi vector<int>
+#define vii vector<pair<int, int>>
+#define pb(a) push_back(a)
+#define sp " "
+#define sz(n) n.size()
+// bool odd(ll num) { return ((num & 1) == 1);}
+// bool even(ll num) { return ((num & 1) == 0);}
+// bool isEqual(double a,double b) {return abs(a-b)<EPS;}
+// bool isGreater(double a,double b) {return a>=b+EPS;}
+// bool isGreaterEqual(double a,double b) {return a>b-EPS;}
+#define tc    \
+    int t;    \
+    cin >> t; \
+    while (t--)
+#define ff(n) for(int i = 0; i < n; i++)
+#define ffr(n) for(int j = 0; j < n; j++)
+#define ffr1(n) for(int j = 1; j <= n; j++)
+#define ff1(n) for(int i = 1; i <= n; i++)
+#define lcm(a, b) (((a) * (b)) / __gcd(a, b))
+#define all(n) n.begin(), n.end()
+#define rall(n) n.rbegin(), n.rend()
+#define bye return 0;
+using namespace std;
+double to_red(double degree)
+{
+    return (degree*pi/180.0);
+}
+double to_deg(double redian)
+{
+    return (180.0*redian/pi);
+}
+double to_deg_form_min(double min)
+{
+    return (min/60);
+}
+int main()
+{  
+
+    bye
+}
