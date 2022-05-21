@@ -30,7 +30,7 @@ double fix_angle(double A)
     return A>1?1:(A<-1?-1:A);
 }
 //sinA/a = sinB/b = sinC/c
-double getside_a_bAB(double b,double A,doule B)
+double getside_a_bAB(double b,double A,double B)
 {
     return (sin(A)*b)/sin(B);
 }
