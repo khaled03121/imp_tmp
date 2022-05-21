@@ -7,8 +7,8 @@ typedef long long int ll;
 #define pb(a) push_back(a)
 #define sp " "
 #define sz(n) n.size()
-// bool odd(ll num) { return ((num & 1) == 1);}
-// bool even(ll num) { return ((num & 1) == 0);}
+bool odd(ll num) { return ((num & 1) == 1);}
+bool even(ll num) { return ((num & 1) == 0);}
 // bool isEqual(double a,double b) {return abs(a-b)<EPS;}
 // bool isGreater(double a,double b) {return a>=b+EPS;}
 // bool isGreaterEqual(double a,double b) {return a>b-EPS;}
@@ -25,9 +25,26 @@ typedef long long int ll;
 #define rall(n) n.rbegin(), n.rend()
 #define bye return 0;
 using namespace std;
+double fix_angle(double A)
+{
+    return A>1?1:(A<-1?-1:A);
+}
+//sinA/a = sinB/b = sinC/c
+double getside_a_bAB(double b,double A,doule B)
+{
+    return (sin(A)*b)/sin(B);
+}
+double getangle_A_abB(double a,double b,double B)
+{
+    return asin( fix_angle( a*sin(B)/b ) );
+}
 double to_red(double degree)
 {
     return (degree*pi/180.0);
+}
+double get_angle_abc(double a,double b,double c)
+{
+    return acos(fix_angle((b*b+c*c-a*a)/2*b*c));
 }
 double to_deg(double redian)
 {
