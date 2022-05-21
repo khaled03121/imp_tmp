@@ -31,6 +31,7 @@ double to_red(double degree)
 }
 double to_deg(double redian)
 {
+    if(redian<0) redian+=(2*pi);
     return (180.0*redian/pi);
 }
 double to_deg_form_min(double min)
